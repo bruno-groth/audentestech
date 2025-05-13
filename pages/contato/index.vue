@@ -1,5 +1,47 @@
 <template>
-  <div class="section">
+  <div class="section relative overflow-hidden">
+    <!-- Elementos decorativos temáticos -->
+    <div class="absolute inset-0 overflow-hidden">
+      <!-- Círculos de conexão -->
+      <div class="absolute left-[5%] top-[15%] w-24 h-24 sm:w-32 sm:h-32 rounded-full border border-primary/15 opacity-15 animate-pulse-slow"></div>
+      <div class="absolute right-[10%] bottom-[10%] w-32 h-32 sm:w-40 sm:h-40 rounded-full border-2 border-primary/20 opacity-20 animate-spin-slow"></div>
+      
+      <!-- Ícones de comunicação -->
+      <div class="absolute top-[10%] right-[20%] opacity-10 text-primary">
+        <svg class="w-8 h-8 sm:w-10 sm:h-10 animate-bounce-slow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+        </svg>
+      </div>
+
+      <!-- Linhas de conexão -->
+      <div class="absolute left-[15%] top-[40%] space-y-1 opacity-10 scale-75 sm:scale-100">
+        <div class="h-1 w-12 sm:w-16 bg-primary/30 animate-width"></div>
+        <div class="h-1 w-16 sm:w-24 bg-primary/20 animate-width-delay"></div>
+      </div>
+
+      <!-- Ícone de parceria -->
+      <div class="absolute right-[15%] top-[40%] opacity-10">
+        <svg class="w-10 h-10 sm:w-12 sm:h-12 text-primary animate-spin-very-slow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+        </svg>
+      </div>
+
+      <!-- Ícone de check/sucesso -->
+      <div class="absolute left-[25%] bottom-[20%] opacity-10">
+        <svg class="w-8 h-8 sm:w-10 sm:h-10 text-primary animate-float" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+      </div>
+
+      <!-- Pontos de conexão -->
+      <div class="absolute right-[30%] bottom-[30%] grid grid-cols-3 gap-1 opacity-10">
+        <div class="w-1 h-1 bg-primary rounded-full animate-ping"></div>
+        <div class="w-1 h-1 bg-primary rounded-full animate-ping" style="animation-delay: 0.2s"></div>
+        <div class="w-1 h-1 bg-primary rounded-full animate-ping" style="animation-delay: 0.4s"></div>
+      </div>
+    </div>
+
+    <!-- Formulário de contato -->
     <div class="container">
       <div class="max-w-3xl mx-auto">
         <h1 class="heading-1 text-center mb-6">Vamos construir juntos?</h1>
