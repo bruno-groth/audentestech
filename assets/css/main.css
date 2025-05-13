@@ -28,7 +28,7 @@
   }
   
   .btn-primary {
-    @apply bg-primary hover:bg-primary/90 text-dark font-semibold py-3 px-6 rounded-lg transition-all duration-300;
+    @apply bg-primary hover:bg-primary/90 text-dark font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/20 active:translate-y-0 active:shadow-none;
   }
 
   .section {
@@ -45,5 +45,143 @@
 
   .card {
     @apply bg-dark/50 backdrop-blur-sm rounded-xl p-6 border border-primary/20;
+  }
+}
+
+/* Animações para os elementos decorativos */
+@keyframes fade-in-slow {
+  from { opacity: 0; }
+  to { opacity: 0.1; }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes spin-very-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse-slow {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes width {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes draw {
+  from { stroke-dashoffset: 100; }
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.1; }
+  50% { opacity: 0.2; }
+}
+
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-fade-in-slow {
+  animation: fade-in-slow 2s ease-in forwards;
+}
+
+.animate-fade-in-delay {
+  animation: fade-in-slow 2s ease-in 0.5s forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in-slow 2s ease-in 1s forwards;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-spin-reverse {
+  animation: spin-reverse 15s linear infinite;
+}
+
+.animate-spin-very-slow {
+  animation: spin-very-slow 30s linear infinite;
+}
+
+.animate-spin-reverse-slow {
+  animation: spin-reverse-slow 25s linear infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delay {
+  animation: float 6s ease-in-out 2s infinite;
+}
+
+.animate-float-delay-2 {
+  animation: float 6s ease-in-out 4s infinite;
+}
+
+.animate-width {
+  animation: width 1.5s ease-out forwards;
+}
+
+.animate-width-delay {
+  animation: width 1.5s ease-out 0.5s forwards;
+}
+
+.animate-width-delay-2 {
+  animation: width 1.5s ease-out 1s forwards;
+}
+
+.animate-draw {
+  stroke-dasharray: 100;
+  animation: draw 2s ease-in-out forwards;
+}
+
+.animate-draw-delay {
+  stroke-dasharray: 100;
+  animation: draw 2s ease-in-out 0.5s forwards;
+}
+
+.animate-draw-delay-2 {
+  stroke-dasharray: 100;
+  animation: draw 2s ease-in-out 1s forwards;
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
+
+/* Animações responsivas */
+@media (max-width: 640px) {
+  .animate-float, .animate-float-delay, .animate-float-delay-2 {
+    animation-duration: 4s;
+  }
+  
+  .animate-spin-very-slow, .animate-spin-reverse-slow {
+    animation-duration: 15s;
   }
 }

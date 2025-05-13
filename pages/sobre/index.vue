@@ -1,8 +1,22 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="section">
-      <div class="container">
+    <section class="section relative overflow-hidden">
+      <!-- Elementos decorativos hero -->
+      <div class="absolute inset-0 overflow-hidden">
+        <!-- Círculos tech -->
+        <div class="absolute left-[5%] top-[20%] w-32 h-32 sm:w-48 sm:h-48 rounded-full border-2 border-primary/20 opacity-20 animate-pulse-slow"></div>
+        <div class="absolute right-[10%] bottom-[10%] w-24 h-24 sm:w-40 sm:h-40 rounded-full border border-primary/15 opacity-15 animate-spin-slow"></div>
+        
+        <!-- Código decorativo -->
+        <div class="absolute top-[15%] right-[20%] opacity-10 text-primary font-mono animate-fade-in">
+          <div class="text-sm sm:text-base">&lt;code&gt;</div>
+          <div class="text-sm sm:text-base ml-4">innovation</div>
+          <div class="text-sm sm:text-base">&lt;/code&gt;</div>
+        </div>
+      </div>
+
+      <div class="container relative z-10">
         <div class="max-w-3xl mx-auto text-center">
           <h1 class="heading-1 mb-6">Sobre a Audentes Tech</h1>
           <p class="text-xl text-light/80">
@@ -14,8 +28,24 @@
     </section>
 
     <!-- Vision & Values -->
-    <section class="section bg-dark/50">
-      <div class="container">
+    <section class="section bg-dark/50 relative overflow-hidden">
+      <!-- Elementos decorativos valores -->
+      <div class="absolute inset-0 overflow-hidden">
+        <!-- Linhas de conexão -->
+        <svg class="absolute inset-0 w-full h-full opacity-5">
+          <line x1="20%" y1="30%" x2="40%" y2="60%" stroke="currentColor" class="text-primary animate-draw" stroke-width="1" />
+          <line x1="80%" y1="40%" x2="60%" y2="70%" stroke="currentColor" class="text-primary animate-draw-delay" stroke-width="1" />
+        </svg>
+
+        <!-- Pontos de conexão -->
+        <div class="absolute right-[25%] top-[40%] grid grid-cols-3 gap-1 opacity-10">
+          <div class="w-1 h-1 bg-primary rounded-full animate-ping"></div>
+          <div class="w-1 h-1 bg-primary rounded-full animate-ping" style="animation-delay: 0.2s"></div>
+          <div class="w-1 h-1 bg-primary rounded-full animate-ping" style="animation-delay: 0.4s"></div>
+        </div>
+      </div>
+
+      <div class="container relative z-10">
         <div class="grid md:grid-cols-2 gap-12">
           <div>
             <h2 class="heading-2 mb-6">Nossa Visão</h2>
@@ -75,8 +105,26 @@
     </section>
 
     <!-- Technology Stack -->
-    <section class="section">
-      <div class="container">
+    <section class="section relative overflow-hidden">
+      <!-- Elementos decorativos tech -->
+      <div class="absolute inset-0 overflow-hidden">
+        <!-- Hexágonos tech -->
+        <div class="absolute left-[10%] top-[20%] opacity-10">
+          <svg class="w-16 h-16 text-primary animate-spin-very-slow" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M12 2l8.66 5v10L12 22l-8.66-5V7L12 2z" />
+          </svg>
+        </div>
+        <div class="absolute right-[15%] bottom-[25%] opacity-10">
+          <svg class="w-12 h-12 text-primary animate-spin-reverse-slow" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M12 2l8.66 5v10L12 22l-8.66-5V7L12 2z" />
+          </svg>
+        </div>
+
+        <!-- Grid de pontos -->
+        <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(circle at 1px 1px, #4ade80 1px, transparent 0); background-size: 40px 40px;"></div>
+      </div>
+
+      <div class="container relative z-10">
         <div class="max-w-3xl mx-auto">
           <h2 class="heading-2 text-center mb-12">Nossa Tecnologia</h2>
           <div class="card">
@@ -114,8 +162,26 @@
     </section>
 
     <!-- Process Section -->
-    <section class="section bg-dark/50">
-      <div class="container">
+    <section class="section bg-dark/50 relative overflow-hidden">
+      <!-- Elementos decorativos processo -->
+      <div class="absolute inset-0 overflow-hidden">
+        <!-- Linhas de progresso -->
+        <div class="absolute left-[5%] top-[40%] space-y-2 opacity-10">
+          <div class="h-1 w-16 bg-primary/40 animate-width"></div>
+          <div class="h-1 w-24 bg-primary/30 animate-width-delay"></div>
+          <div class="h-1 w-32 bg-primary/20 animate-width-delay-2"></div>
+        </div>
+
+        <!-- Círculos de processo -->
+        <div class="absolute right-[10%] top-[30%] w-20 h-20 rounded-full border border-primary/20 opacity-20 animate-spin-slow"></div>
+        
+        <!-- Números flutuantes -->
+        <div class="absolute right-[20%] bottom-[20%] opacity-10 text-primary font-bold">
+          <div class="text-2xl animate-float">01</div>
+        </div>
+      </div>
+
+      <div class="container relative z-10">
         <h2 class="heading-2 text-center mb-12">Nosso Processo</h2>
         <div class="grid md:grid-cols-4 gap-8">
           <div class="card text-center">
@@ -162,8 +228,27 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="section">
-      <div class="container text-center">
+    <section class="section relative overflow-hidden">
+      <!-- Elementos decorativos CTA -->
+      <div class="absolute inset-0 overflow-hidden">
+        <!-- Círculo principal -->
+        <div class="absolute left-[20%] top-[30%] w-40 h-40 sm:w-56 sm:h-56 rounded-full border-2 border-primary/20 opacity-20 animate-pulse"></div>
+        
+        <!-- Ícone de conexão -->
+        <div class="absolute right-[25%] top-[40%] opacity-10">
+          <svg class="w-12 h-12 text-primary animate-bounce-slow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+          </svg>
+        </div>
+
+        <!-- Linhas de conexão -->
+        <svg class="absolute inset-0 w-full h-full opacity-5">
+          <line x1="30%" y1="40%" x2="50%" y2="60%" stroke="currentColor" class="text-primary animate-draw" stroke-width="1" />
+          <line x1="70%" y1="40%" x2="50%" y2="60%" stroke="currentColor" class="text-primary animate-draw-delay" stroke-width="1" />
+        </svg>
+      </div>
+
+      <div class="container relative z-10 text-center">
         <h2 class="heading-2 mb-6">Vamos criar algo incrível juntos?</h2>
         <p class="text-xl text-light/80 mb-8 max-w-2xl mx-auto">
           Entre em contato para uma consultoria gratuita e descubra como podemos ajudar seu negócio a crescer online.

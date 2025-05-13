@@ -126,29 +126,6 @@
       </div>
     </section>
 
-    <!-- Newsletter -->
-    <section class="section">
-      <div class="container">
-        <div class="max-w-2xl mx-auto text-center">
-          <h2 class="heading-2 mb-6">Inscreva-se na nossa newsletter</h2>
-          <p class="text-light/80 mb-8">
-            Receba mais conteúdo como este diretamente no seu e-mail.
-          </p>
-          <form @submit.prevent="subscribeNewsletter" class="flex gap-4 max-w-md mx-auto">
-            <input 
-              type="email" 
-              v-model="newsletterEmail"
-              placeholder="Seu melhor e-mail"
-              required
-              class="flex-1 px-4 py-2 bg-dark rounded-lg border border-primary/20 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
-            />
-            <button type="submit" class="btn-primary whitespace-nowrap">
-              Inscrever-se
-            </button>
-          </form>
-        </div>
-      </div>
-    </section>
   </div>
 </template>
 
@@ -158,7 +135,6 @@ const { getPost, getRelatedPosts } = useBlogPosts()
 
 const post = ref(getPost(route.params.slug))
 const relatedPosts = ref(getRelatedPosts(route.params.slug))
-const newsletterEmail = ref('')
 
 // Current URL for sharing
 const currentUrl = computed(() => {
@@ -168,11 +144,6 @@ const currentUrl = computed(() => {
   return ''
 })
 
-const subscribeNewsletter = () => {
-  console.log('Newsletter subscription:', newsletterEmail.value)
-  newsletterEmail.value = ''
-  alert('Obrigado por se inscrever! Em breve você receberá nossas novidades.')
-}
 
 // Watch for route changes to update content
 watch(

@@ -188,14 +188,58 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="section bg-primary/10">
-      <div class="container text-center">
+    <section class="section bg-primary/10 relative overflow-hidden">
+      <!-- Elementos decorativos temáticos -->
+      <div class="absolute inset-0 overflow-hidden">
+        <!-- Círculos dinâmicos -->
+        <div class="absolute left-[5%] sm:left-[15%] top-[15%] w-24 h-24 sm:w-36 sm:h-36 rounded-full border border-primary/15 opacity-15 animate-pulse-slow"></div>
+        <div class="absolute right-[10%] sm:right-[20%] bottom-[20%] w-32 h-32 sm:w-48 sm:h-48 rounded-full border-2 border-primary/20 opacity-20 animate-spin-slow"></div>
+        
+        <!-- Ícones de resultados -->
+        <div class="absolute top-[20%] right-[15%] sm:right-[25%] opacity-10 text-primary">
+          <svg class="w-8 h-8 sm:w-12 sm:h-12 animate-bounce-slow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+          </svg>
+        </div>
+
+        <!-- Gráfico de barras -->
+        <div class="absolute left-[10%] bottom-[25%] space-y-2 opacity-10 scale-75 sm:scale-100">
+          <div class="h-1 w-12 sm:w-16 bg-primary/40 animate-width"></div>
+          <div class="h-1 w-16 sm:w-24 bg-primary/50 animate-width-delay"></div>
+          <div class="h-1 w-20 sm:w-32 bg-primary/60 animate-width-delay-2"></div>
+        </div>
+
+        <!-- Ícone de alvo/meta -->
+        <div class="absolute right-[25%] top-[30%] opacity-10">
+          <svg class="w-10 h-10 sm:w-16 sm:h-16 text-primary animate-spin-very-slow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        </div>
+
+        <!-- Números e métricas -->
+        <div class="absolute left-[20%] top-[40%] opacity-10 text-primary font-bold">
+          <div class="text-xl sm:text-3xl animate-fade-in">100%</div>
+        </div>
+        <div class="absolute right-[15%] bottom-[30%] opacity-10 text-primary font-bold">
+          <div class="text-lg sm:text-2xl animate-fade-in-delay">ROI</div>
+        </div>
+
+        <!-- Linhas conectoras -->
+        <svg class="absolute inset-0 w-full h-full opacity-5">
+          <line x1="20%" y1="30%" x2="40%" y2="60%" stroke="currentColor" class="text-primary animate-draw" stroke-width="1" />
+          <line x1="80%" y1="40%" x2="60%" y2="70%" stroke="currentColor" class="text-primary animate-draw-delay" stroke-width="1" />
+        </svg>
+      </div>
+
+      <div class="container text-center relative z-10">
         <h2 class="heading-2 mb-6">Pronto para iniciar seu projeto?</h2>
         <p class="text-xl text-light/80 mb-8 max-w-2xl mx-auto">
           Entre em contato conosco para uma consultoria gratuita e personalizada.
         </p>
-        <NuxtLink to="/contato" class="btn-primary inline-block">
-          Solicitar orçamento
+        <NuxtLink to="/contato" class="btn-primary inline-block group relative overflow-hidden">
+          <span class="relative z-10">Solicitar orçamento</span>
+          <div class="absolute inset-0 bg-primary/30 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+          <div class="absolute inset-0 bg-primary/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 delay-75"></div>
         </NuxtLink>
       </div>
     </section>
