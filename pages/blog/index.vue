@@ -39,7 +39,7 @@
       <div class="container">
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <article 
-            v-for="post in filteredPosts" 
+            v-for="post in paginatedPosts" 
             :key="post.slug"
             class="card group hover:scale-[1.02] transition-all duration-300"
           >
@@ -75,7 +75,7 @@
         </div>
 
         <!-- Pagination -->
-        <div class="mt-12 flex justify-center gap-2">
+        <div v-if="totalPages > 1" class="mt-12 flex justify-center gap-2">
           <button 
             v-for="page in totalPages" 
             :key="page"
@@ -121,42 +121,14 @@
 </template>
 
 <script setup>
+const { getAllPosts } = useBlogPosts()
+
 const categories = [
   { slug: 'all', name: 'Todos' },
-  { slug: 'desenvolvimento', name: 'Desenvolvimento Web' },
-  { slug: 'design', name: 'Design UI/UX' },
-  { slug: 'seo', name: 'SEO' },
-  { slug: 'tecnologia', name: 'Tecnologia' }
-]
-
-const posts = [
-  {
-    slug: 'importancia-site-rapido',
-    title: 'A importância de ter um site rápido em 2024',
-    excerpt: 'Descubra como a velocidade do seu site impacta diretamente nas conversões e no SEO.',
-    image: '/blog/post-1.jpg',
-    date: '10 Jan 2024',
-    category: 'desenvolvimento',
-    tags: ['Performance', 'SEO', 'Web Vitals'],
-  },
-  {
-    slug: 'tendencias-design-web',
-    title: 'Tendências de Design Web para 2024',
-    excerpt: 'As principais tendências de design que vão dominar a web neste ano.',
-    image: '/blog/post-2.jpg',
-    date: '15 Jan 2024',
-    category: 'design',
-    tags: ['Design', 'Tendências', 'UI/UX'],
-  },
-  {
-    slug: 'otimizacao-seo-2024',
-    title: 'Guia Completo de SEO para 2024',
-    excerpt: 'Aprenda as melhores práticas de SEO para melhorar o ranking do seu site.',
-    image: '/blog/post-3.jpg',
-    date: '20 Jan 2024',
-    category: 'seo',
-    tags: ['SEO', 'Marketing Digital', 'Google'],
-  }
+  { slug: 'negocios', name: 'Negócios' },
+  { slug: 'design', name: 'Design' },
+  { slug: 'desenvolvimento', name: 'Desenvolvimento' },
+  { slug: 'seo', name: 'SEO' }
 ]
 
 const currentCategory = ref('all')
@@ -164,12 +136,14 @@ const currentPage = ref(1)
 const postsPerPage = 6
 const newsletterEmail = ref('')
 
-const totalPages = computed(() => Math.ceil(filteredPosts.value.length / postsPerPage))
+const allPosts = getAllPosts()
 
 const filteredPosts = computed(() => {
-  if (currentCategory.value === 'all') return posts
-  return posts.filter(post => post.category === currentCategory.value)
+  if (currentCategory.value === 'all') return allPosts
+  return allPosts.filter(post => post.category === currentCategory.value)
 })
+
+const totalPages = computed(() => Math.ceil(filteredPosts.value.length / postsPerPage))
 
 const paginatedPosts = computed(() => {
   const start = (currentPage.value - 1) * postsPerPage
@@ -177,19 +151,36 @@ const paginatedPosts = computed(() => {
   return filteredPosts.value.slice(start, end)
 })
 
+// Reset pagination when category changes
+watch(currentCategory, () => {
+  currentPage.value = 1
+})
+
 const subscribeNewsletter = () => {
-  // Implement newsletter subscription logic
   console.log('Newsletter subscription:', newsletterEmail.value)
   newsletterEmail.value = ''
   alert('Obrigado por se inscrever! Em breve você receberá nossas novidades.')
 }
 
+// SEO metadata
 useHead({
   title: 'Blog - Audentes Tech',
   meta: [
     {
       name: 'description',
       content: 'Blog da Audentes Tech: Artigos sobre desenvolvimento web, design, SEO e tecnologia. Fique por dentro das últimas tendências do mercado digital.'
+    },
+    {
+      property: 'og:title',
+      content: 'Blog - Audentes Tech'
+    },
+    {
+      property: 'og:description',
+      content: 'Blog da Audentes Tech: Artigos sobre desenvolvimento web, design, SEO e tecnologia. Fique por dentro das últimas tendências do mercado digital.'
+    },
+    {
+      property: 'og:type',
+      content: 'website'
     }
   ]
 })

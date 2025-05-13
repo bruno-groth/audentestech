@@ -21,8 +21,8 @@
         <button class="md:hidden" @click="isMobileMenuOpen = !isMobileMenuOpen">
           <span class="sr-only">Menu</span>
           <div class="w-6 h-6 flex items-center justify-center">
-            <i class="i-heroicons-bars-3 text-2xl" v-if="!isMobileMenuOpen"></i>
-            <i class="i-heroicons-x-mark text-2xl" v-else></i>
+            <Icon name="heroicons:bars-3" class="text-2xl" v-if="!isMobileMenuOpen" />
+            <Icon name="heroicons:x-mark" class="text-2xl" v-else />
           </div>
         </button>
       </nav>
@@ -96,7 +96,7 @@
        target="_blank" 
        rel="noopener noreferrer"
        class="fixed bottom-6 right-6 bg-primary hover:bg-primary/90 text-dark p-4 rounded-full shadow-lg transition-transform hover:scale-105 z-50">
-      <i class="i-mdi-whatsapp text-2xl"></i>
+      <Icon name="mdi:whatsapp" class="text-2xl" />
       <span class="sr-only">WhatsApp</span>
     </a>
   </div>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <article class="article-content" itemscope itemtype="http://schema.org/BlogPosting">
+    <article v-if="post" class="article-content" itemscope itemtype="http://schema.org/BlogPosting">
       <!-- Hero Section -->
       <section class="relative min-h-[50vh] flex items-center">
         <div class="absolute inset-0">
@@ -46,9 +46,8 @@
             <div 
               class="prose prose-lg prose-invert max-w-none"
               itemprop="articleBody"
-            >
-              <div v-html="post.content"></div>
-            </div>
+              v-html="post.content"
+            ></div>
 
             <!-- Author Info -->
             <div class="mt-12 pt-8 border-t border-primary/10">
@@ -75,7 +74,7 @@
                 rel="noopener noreferrer"
                 class="text-light/80 hover:text-primary transition-colors"
               >
-                <i class="i-mdi-twitter text-2xl"></i>
+                <Icon name="mdi:twitter" class="text-2xl" />
                 <span class="sr-only">Compartilhar no Twitter</span>
               </a>
               <a 
@@ -84,7 +83,7 @@
                 rel="noopener noreferrer"
                 class="text-light/80 hover:text-primary transition-colors"
               >
-                <i class="i-mdi-linkedin text-2xl"></i>
+                <Icon name="mdi:linkedin" class="text-2xl" />
                 <span class="sr-only">Compartilhar no LinkedIn</span>
               </a>
             </div>
@@ -94,10 +93,10 @@
     </article>
 
     <!-- Related Posts -->
-    <section class="section bg-dark/50">
+    <section v-if="post" class="section bg-dark/50">
       <div class="container">
         <h2 class="heading-2 text-center mb-12">Artigos Relacionados</h2>
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <article 
             v-for="relatedPost in relatedPosts" 
             :key="relatedPost.slug"
@@ -155,58 +154,11 @@
 
 <script setup>
 const route = useRoute()
+const { getPost, getRelatedPosts } = useBlogPosts()
+
+const post = ref(getPost(route.params.slug))
+const relatedPosts = ref(getRelatedPosts(route.params.slug))
 const newsletterEmail = ref('')
-
-// Sample post data - In a real app, this would come from an API or CMS
-const post = {
-  title: 'A importância de ter um site rápido em 2024',
-  slug: 'importancia-site-rapido',
-  date: '10 Jan 2024',
-  readingTime: '5',
-  image: '/blog/post-1.jpg',
-  tags: ['Performance', 'SEO', 'Web Vitals'],
-  excerpt: 'Descubra como a velocidade do seu site impacta diretamente nas conversões e no SEO.',
-  content: `
-    <p>A velocidade de carregamento de um site é um dos fatores mais importantes para o sucesso online em 2024. Com a crescente competitividade no mercado digital, ter um site rápido não é mais um diferencial, mas uma necessidade.</p>
-
-    <h2>Por que a velocidade é importante?</h2>
-    <p>Estudos mostram que 53% dos usuários abandonam um site que demora mais de 3 segundos para carregar. Além disso, o Google considera a velocidade de carregamento como um fator importante para o ranking nas buscas.</p>
-
-    <h2>Como melhorar a performance do seu site</h2>
-    <ul>
-      <li>Otimize as imagens</li>
-      <li>Use um bom serviço de hospedagem</li>
-      <li>Implemente cache adequadamente</li>
-      <li>Minimize arquivos CSS e JavaScript</li>
-    </ul>
-
-    <h2>Impacto nas conversões</h2>
-    <p>A cada segundo adicional no tempo de carregamento, as taxas de conversão caem aproximadamente 7%. Em um mercado competitivo, essa diferença pode significar milhares de reais em vendas perdidas.</p>
-  `,
-  author: {
-    name: 'João Silva',
-    avatar: '/blog/authors/joao-silva.jpg',
-    bio: 'Desenvolvedor web full-stack e especialista em performance'
-  }
-}
-
-// Sample related posts
-const relatedPosts = [
-  {
-    slug: 'tendencias-design-web',
-    title: 'Tendências de Design Web para 2024',
-    excerpt: 'As principais tendências de design que vão dominar a web neste ano.',
-    image: '/blog/post-2.jpg',
-    date: '15 Jan 2024'
-  },
-  {
-    slug: 'otimizacao-seo-2024',
-    title: 'Guia Completo de SEO para 2024',
-    excerpt: 'Aprenda as melhores práticas de SEO para melhorar o ranking do seu site.',
-    image: '/blog/post-3.jpg',
-    date: '20 Jan 2024'
-  }
-]
 
 // Current URL for sharing
 const currentUrl = computed(() => {
@@ -217,63 +169,71 @@ const currentUrl = computed(() => {
 })
 
 const subscribeNewsletter = () => {
-  // Implement newsletter subscription logic
   console.log('Newsletter subscription:', newsletterEmail.value)
   newsletterEmail.value = ''
   alert('Obrigado por se inscrever! Em breve você receberá nossas novidades.')
 }
 
+// Watch for route changes to update content
+watch(
+  () => route.params.slug,
+  (newSlug) => {
+    post.value = getPost(newSlug)
+    relatedPosts.value = getRelatedPosts(newSlug)
+  }
+)
+
 // SEO metadata
-useHead({
-  title: `${post.title} - Blog Audentes Tech`,
+useHead(() => ({
+  title: post.value ? `${post.value.title} - Blog Audentes Tech` : 'Blog - Audentes Tech',
   meta: [
     {
       name: 'description',
-      content: post.excerpt
+      content: post.value?.excerpt || 'Blog da Audentes Tech'
     },
     {
       property: 'og:title',
-      content: post.title
+      content: post.value ? `${post.value.title} - Blog Audentes Tech` : 'Blog - Audentes Tech'
     },
     {
       property: 'og:description',
-      content: post.excerpt
+      content: post.value?.excerpt || 'Blog da Audentes Tech'
     },
     {
       property: 'og:image',
-      content: post.image
+      content: post.value?.image || '/images/default-og.jpg'
     },
     {
       property: 'og:type',
       content: 'article'
     },
-    {
+    post.value && {
       property: 'article:published_time',
-      content: post.date
+      content: post.value.date
     },
-    {
+    post.value && {
       property: 'article:author',
-      content: post.author.name
+      content: post.value.author.name
     },
-    {
+    post.value && {
       property: 'article:tag',
-      content: post.tags.join(',')
+      content: post.value.tags.join(',')
     }
-  ],
+  ].filter(Boolean),
   script: [
     {
       type: 'application/ld+json',
       innerHTML: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'BlogPosting',
-        headline: post.title,
-        image: post.image,
-        datePublished: post.date,
-        author: {
+        headline: post.value?.title,
+        image: post.value?.image,
+        datePublished: post.value?.date,
+        author: post.value ? {
           '@type': 'Person',
-          name: post.author.name,
-          image: post.author.avatar
-        },
+          name: post.value.author.name,
+          image: post.value.author.avatar
+        } : undefined,
         publisher: {
           '@type': 'Organization',
           name: 'Audentes Tech',
@@ -285,5 +245,5 @@ useHead({
       })
     }
   ]
-})
+}))
 </script>

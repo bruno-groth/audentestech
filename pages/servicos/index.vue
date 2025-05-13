@@ -20,7 +20,7 @@
           <!-- Sites Institucionais -->
           <div id="sites" class="card">
             <div class="mb-6">
-              <i class="i-heroicons-building-office text-4xl text-primary"></i>
+              <Icon name="heroicons:building-office" class="text-4xl text-primary" />
             </div>
             <h2 class="text-2xl font-bold mb-4">Sites Institucionais</h2>
             <p class="text-light/80 mb-6">
@@ -29,19 +29,19 @@
             </p>
             <ul class="space-y-3 mb-6 text-light/80">
               <li class="flex items-start gap-2">
-                <i class="i-heroicons-check text-primary mt-1"></i>
+                <Icon name="heroicons:check" class="text-primary mt-1" />
                 Design personalizado e responsivo
               </li>
               <li class="flex items-start gap-2">
-                <i class="i-heroicons-check text-primary mt-1"></i>
+                <Icon name="heroicons:check" class="text-primary mt-1" />
                 Otimização para mecanismos de busca (SEO)
               </li>
               <li class="flex items-start gap-2">
-                <i class="i-heroicons-check text-primary mt-1"></i>
+                <Icon name="heroicons:check" class="text-primary mt-1" />
                 Integração com redes sociais
               </li>
               <li class="flex items-start gap-2">
-                <i class="i-heroicons-check text-primary mt-1"></i>
+                <Icon name="heroicons:check" class="text-primary mt-1" />
                 Painel administrativo intuitivo
               </li>
             </ul>
@@ -51,7 +51,7 @@
           <!-- Landing Pages -->
           <div id="landing" class="card">
             <div class="mb-6">
-              <i class="i-heroicons-presentation-chart-line text-4xl text-primary"></i>
+              <Icon name="heroicons:presentation-chart-line" class="text-4xl text-primary" />
             </div>
             <h2 class="text-2xl font-bold mb-4">Landing Pages</h2>
             <p class="text-light/80 mb-6">
@@ -60,19 +60,19 @@
             </p>
             <ul class="space-y-3 mb-6 text-light/80">
               <li class="flex items-start gap-2">
-                <i class="i-heroicons-check text-primary mt-1"></i>
+                <Icon name="heroicons:check" class="text-primary mt-1" />
                 Design focado em conversão
               </li>
               <li class="flex items-start gap-2">
-                <i class="i-heroicons-check text-primary mt-1"></i>
+                <Icon name="heroicons:check" class="text-primary mt-1" />
                 Formulários e CTAs otimizados
               </li>
               <li class="flex items-start gap-2">
-                <i class="i-heroicons-check text-primary mt-1"></i>
+                <Icon name="heroicons:check" class="text-primary mt-1" />
                 Integração com ferramentas de marketing
               </li>
               <li class="flex items-start gap-2">
-                <i class="i-heroicons-check text-primary mt-1"></i>
+                <Icon name="heroicons:check" class="text-primary mt-1" />
                 Análise de performance e conversão
               </li>
             </ul>
@@ -82,7 +82,7 @@
           <!-- Web Apps -->
           <div id="apps" class="card">
             <div class="mb-6">
-              <i class="i-heroicons-code-bracket-square text-4xl text-primary"></i>
+              <Icon name="heroicons:code-bracket-square" class="text-4xl text-primary" />
             </div>
             <h2 class="text-2xl font-bold mb-4">Web Apps</h2>
             <p class="text-light/80 mb-6">
@@ -90,19 +90,19 @@
             </p>
             <ul class="space-y-3 mb-6 text-light/80">
               <li class="flex items-start gap-2">
-                <i class="i-heroicons-check text-primary mt-1"></i>
+                <Icon name="heroicons:check" class="text-primary mt-1" />
                 Desenvolvimento personalizado
               </li>
               <li class="flex items-start gap-2">
-                <i class="i-heroicons-check text-primary mt-1"></i>
+                <Icon name="heroicons:check" class="text-primary mt-1" />
                 APIs e integrações
               </li>
               <li class="flex items-start gap-2">
-                <i class="i-heroicons-check text-primary mt-1"></i>
+                <Icon name="heroicons:check" class="text-primary mt-1" />
                 Painéis administrativos
               </li>
               <li class="flex items-start gap-2">
-                <i class="i-heroicons-check text-primary mt-1"></i>
+                <Icon name="heroicons:check" class="text-primary mt-1" />
                 Escalabilidade e performance
               </li>
             </ul>
@@ -112,7 +112,7 @@
           <!-- E-commerce -->
           <div id="ecommerce" class="card">
             <div class="mb-6">
-              <i class="i-heroicons-shopping-cart text-4xl text-primary"></i>
+              <Icon name="heroicons:shopping-cart" class="text-4xl text-primary" />
             </div>
             <h2 class="text-2xl font-bold mb-4">E-commerce</h2>
             <p class="text-light/80 mb-6">
@@ -121,19 +121,19 @@
             </p>
             <ul class="space-y-3 mb-6 text-light/80">
               <li class="flex items-start gap-2">
-                <i class="i-heroicons-check text-primary mt-1"></i>
+                <Icon name="heroicons:check" class="text-primary mt-1" />
                 Catálogo de produtos
               </li>
               <li class="flex items-start gap-2">
-                <i class="i-heroicons-check text-primary mt-1"></i>
+                <Icon name="heroicons:check" class="text-primary mt-1" />
                 Gestão de pedidos e estoque
               </li>
               <li class="flex items-start gap-2">
-                <i class="i-heroicons-check text-primary mt-1"></i>
+                <Icon name="heroicons:check" class="text-primary mt-1" />
                 Gateway de pagamento
               </li>
               <li class="flex items-start gap-2">
-                <i class="i-heroicons-check text-primary mt-1"></i>
+                <Icon name="heroicons:check" class="text-primary mt-1" />
                 Relatórios e análises
               </li>
             </ul>
@@ -154,28 +154,28 @@
             </p>
             <ul class="space-y-4 text-light/80">
               <li class="flex items-start gap-3">
-                <i class="i-heroicons-check-circle text-2xl text-primary shrink-0"></i>
+                <Icon name="heroicons:check-circle" class="text-2xl text-primary shrink-0" />
                 <div>
                   <strong class="block mb-1">Estrutura técnica otimizada</strong>
                   Meta tags, URLs amigáveis, sitemap.xml e schema.org
                 </div>
               </li>
               <li class="flex items-start gap-3">
-                <i class="i-heroicons-check-circle text-2xl text-primary shrink-0"></i>
+                <Icon name="heroicons:check-circle" class="text-2xl text-primary shrink-0" />
                 <div>
                   <strong class="block mb-1">Performance e velocidade</strong>
                   Carregamento rápido, otimização de imagens e código limpo
                 </div>
               </li>
               <li class="flex items-start gap-3">
-                <i class="i-heroicons-check-circle text-2xl text-primary shrink-0"></i>
+                <Icon name="heroicons:check-circle" class="text-2xl text-primary shrink-0" />
                 <div>
                   <strong class="block mb-1">Responsividade mobile</strong>
                   Sites adaptados para todos os dispositivos
                 </div>
               </li>
               <li class="flex items-start gap-3">
-                <i class="i-heroicons-check-circle text-2xl text-primary shrink-0"></i>
+                <Icon name="heroicons:check-circle" class="text-2xl text-primary shrink-0" />
                 <div>
                   <strong class="block mb-1">Conteúdo estruturado</strong>
                   Hierarquia de títulos e semântica HTML adequada

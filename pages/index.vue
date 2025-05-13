@@ -35,7 +35,7 @@
           <!-- Empresas e Profissionais -->
           <div class="card hover:scale-[1.02] transition-transform">
             <div class="mb-6">
-              <i class="i-heroicons-building-office text-4xl text-primary"></i>
+              <Icon name="heroicons:building-office" class="text-4xl text-primary" />
             </div>
             <h3 class="text-2xl font-bold mb-4">Empresas e Profissionais</h3>
             <p class="text-light/80 mb-6">
@@ -44,14 +44,14 @@
             </p>
             <NuxtLink to="/servicos#empresas" class="text-primary hover:text-primary/80 font-semibold inline-flex items-center gap-2">
               Saiba mais
-              <i class="i-heroicons-arrow-right"></i>
+              <Icon name="heroicons:arrow-right" />
             </NuxtLink>
           </div>
 
           <!-- Projetos Complexos -->
           <div class="card hover:scale-[1.02] transition-transform">
             <div class="mb-6">
-              <i class="i-heroicons-cube text-4xl text-primary"></i>
+              <Icon name="heroicons:cube" class="text-4xl text-primary" />
             </div>
             <h3 class="text-2xl font-bold mb-4">Projetos Complexos</h3>
             <p class="text-light/80 mb-6">
@@ -60,7 +60,7 @@
             </p>
             <NuxtLink to="/servicos#projetos" class="text-primary hover:text-primary/80 font-semibold inline-flex items-center gap-2">
               Saiba mais
-              <i class="i-heroicons-arrow-right"></i>
+              <Icon name="heroicons:arrow-right" />
             </NuxtLink>
           </div>
         </div>
@@ -75,7 +75,7 @@
         <div class="grid md:grid-cols-3 gap-8">
           <div class="text-center">
             <div class="mb-6">
-              <i class="i-heroicons-rocket-launch text-4xl text-primary"></i>
+              <Icon name="heroicons:rocket-launch" class="text-4xl text-primary" />
             </div>
             <h3 class="text-xl font-bold mb-4">Performance Excepcional</h3>
             <p class="text-light/80">
@@ -85,7 +85,7 @@
 
           <div class="text-center">
             <div class="mb-6">
-              <i class="i-heroicons-presentation-chart-line text-4xl text-primary"></i>
+              <Icon name="heroicons:presentation-chart-line" class="text-4xl text-primary" />
             </div>
             <h3 class="text-xl font-bold mb-4">SEO Otimizado</h3>
             <p class="text-light/80">
@@ -95,7 +95,7 @@
 
           <div class="text-center">
             <div class="mb-6">
-              <i class="i-heroicons-cursor-arrow-rays text-4xl text-primary"></i>
+              <Icon name="heroicons:cursor-arrow-rays" class="text-4xl text-primary" />
             </div>
             <h3 class="text-xl font-bold mb-4">Design Convertedor</h3>
             <p class="text-light/80">

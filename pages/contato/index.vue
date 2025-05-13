@@ -80,7 +80,7 @@
 
         <div class="mt-12 grid md:grid-cols-2 gap-8">
           <div class="card text-center">
-            <i class="i-mdi-whatsapp text-4xl text-primary mb-4"></i>
+            <Icon name="mdi:whatsapp" class="text-4xl text-primary mb-4" />
             <h3 class="text-xl font-bold mb-2">WhatsApp</h3>
             <p class="text-light/80 mb-4">Resposta rápida para suas dúvidas</p>
             <a 
@@ -94,7 +94,7 @@
           </div>
 
           <div class="card text-center">
-            <i class="i-heroicons-envelope text-4xl text-primary mb-4"></i>
+            <Icon name="heroicons:envelope" class="text-4xl text-primary mb-4" />
             <h3 class="text-xl font-bold mb-2">E-mail</h3>
             <p class="text-light/80 mb-4">Para propostas e parcerias</p>
             <a 

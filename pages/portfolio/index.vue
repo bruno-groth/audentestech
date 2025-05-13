@@ -63,7 +63,7 @@
               class="text-primary hover:text-primary/80 inline-flex items-center gap-2"
             >
               Ver projeto
-              <i class="i-heroicons-arrow-top-right-on-square"></i>
+              <Icon name="heroicons:arrow-top-right-on-square" />
             </a>
           </div>
         </div>

@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "npm run generate",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": "nuxtjs",

@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true, // Mantemos true para SSG
+  routeRules: {
+    '/**': { static: true } // Todas as rotas serão pré-renderizadas
+  },
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@vueuse/nuxt', '@nuxt/icon'],
@@ -89,7 +92,8 @@ export default defineNuxtConfig({
         '/blog/tendencias-design-web',
         '/blog/otimizacao-seo-2024'
       ]
-    }
+    },
+    static: true
   },
   site: {
     url: 'https://audentestech.com.br'
@@ -112,7 +116,9 @@ export default defineNuxtConfig({
     }
   },
   experimental: {
-    payloadExtraction: true
+    payloadExtraction: true,
+    componentIslands: true,
+    renderJsonPayloads: false
   },
   build: {
     transpile: ['@headlessui/vue']
