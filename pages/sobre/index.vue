@@ -35,7 +35,7 @@
             <div class="space-y-6">
               <div class="flex gap-4">
                 <div class="shrink-0">
-                  <i class="i-heroicons-light-bulb text-3xl text-primary"></i>
+                  <Icon name="heroicons:light-bulb" class="text-3xl text-primary" />
                 </div>
                 <div>
                   <h3 class="text-xl font-bold mb-2">Inovação</h3>
@@ -47,7 +47,7 @@
 
               <div class="flex gap-4">
                 <div class="shrink-0">
-                  <i class="i-heroicons-rocket-launch text-3xl text-primary"></i>
+                  <Icon name="heroicons:rocket-launch" class="text-3xl text-primary" />
                 </div>
                 <div>
                   <h3 class="text-xl font-bold mb-2">Performance</h3>
@@ -59,7 +59,7 @@
 
               <div class="flex gap-4">
                 <div class="shrink-0">
-                  <i class="i-heroicons-user-group text-3xl text-primary"></i>
+                  <Icon name="heroicons:user-group" class="text-3xl text-primary" />
                 </div>
                 <div>
                   <h3 class="text-xl font-bold mb-2">Compromisso</h3>
@@ -85,25 +85,25 @@
             </p>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div class="text-center">
-                <i class="i-logos-vue text-4xl mb-4"></i>
+                <Icon name="logos:vue" class="text-4xl mb-4" />
                 <h3 class="font-semibold mb-2">Vue.js</h3>
                 <p class="text-light/80 text-sm">Interfaces modernas</p>
               </div>
               
               <div class="text-center">
-                <i class="i-logos-nuxt-icon text-4xl mb-4"></i>
+                <Icon name="logos:nuxt-icon" class="text-4xl mb-4" />
                 <h3 class="font-semibold mb-2">Nuxt.js</h3>
                 <p class="text-light/80 text-sm">Performance e SEO</p>
               </div>
               
               <div class="text-center">
-                <i class="i-logos-tailwindcss-icon text-4xl mb-4"></i>
+                <Icon name="logos:tailwindcss-icon" class="text-4xl mb-4" />
                 <h3 class="font-semibold mb-2">Tailwind CSS</h3>
                 <p class="text-light/80 text-sm">Design responsivo</p>
               </div>
               
               <div class="text-center">
-                <i class="i-logos-nodejs-icon text-4xl mb-4"></i>
+                <Icon name="logos:nodejs-icon" class="text-4xl mb-4" />
                 <h3 class="font-semibold mb-2">Node.js</h3>
                 <p class="text-light/80 text-sm">Backend robusto</p>
               </div>
@@ -120,7 +120,7 @@
         <div class="grid md:grid-cols-4 gap-8">
           <div class="card text-center">
             <div class="mb-6">
-              <i class="i-heroicons-chat-bubble-left-right text-4xl text-primary"></i>
+              <Icon name="heroicons:chat-bubble-left-right" class="text-4xl text-primary" />
             </div>
             <h3 class="text-xl font-bold mb-4">1. Descoberta</h3>
             <p class="text-light/80">
@@ -130,7 +130,7 @@
 
           <div class="card text-center">
             <div class="mb-6">
-              <i class="i-heroicons-pencil-square text-4xl text-primary"></i>
+              <Icon name="heroicons:pencil-square" class="text-4xl text-primary" />
             </div>
             <h3 class="text-xl font-bold mb-4">2. Planejamento</h3>
             <p class="text-light/80">
@@ -140,7 +140,7 @@
 
           <div class="card text-center">
             <div class="mb-6">
-              <i class="i-heroicons-code-bracket text-4xl text-primary"></i>
+              <Icon name="heroicons:code-bracket" class="text-4xl text-primary" />
             </div>
             <h3 class="text-xl font-bold mb-4">3. Desenvolvimento</h3>
             <p class="text-light/80">
@@ -150,7 +150,7 @@
 
           <div class="card text-center">
             <div class="mb-6">
-              <i class="i-heroicons-rocket-launch text-4xl text-primary"></i>
+              <Icon name="heroicons:rocket-launch" class="text-4xl text-primary" />
             </div>
             <h3 class="text-xl font-bold mb-4">4. Lançamento</h3>
             <p class="text-light/80">

@@ -3,11 +3,7 @@ export default defineNuxtConfig({
   ssr: false,
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
-  modules: [
-    '@nuxtjs/tailwindcss',
-    '@nuxt/image',
-    '@vueuse/nuxt',
-  ],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@vueuse/nuxt', '@nuxt/icon'],
 
   postcss: {
     plugins: {

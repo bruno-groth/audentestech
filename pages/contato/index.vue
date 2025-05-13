@@ -84,12 +84,12 @@
             <h3 class="text-xl font-bold mb-2">WhatsApp</h3>
             <p class="text-light/80 mb-4">Resposta rápida para suas dúvidas</p>
             <a 
-              href="https://wa.me/5511999999999" 
+              href="https://wa.me/5541999964650" 
               target="_blank" 
               rel="noopener noreferrer"
               class="text-primary hover:text-primary/80"
             >
-              (11) 99999-9999
+              (41) 99996-4650
             </a>
           </div>
 
@@ -98,10 +98,10 @@
             <h3 class="text-xl font-bold mb-2">E-mail</h3>
             <p class="text-light/80 mb-4">Para propostas e parcerias</p>
             <a 
-              href="mailto:contato@audentestech.com.br"
+              href="mailto:adm.audentestech@gmail.com"
               class="text-primary hover:text-primary/80"
             >
-              contato@audentestech.com.br
+              adm.audentestech@gmail.com
             </a>
           </div>
         </div>

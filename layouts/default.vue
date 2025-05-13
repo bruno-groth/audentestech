@@ -75,10 +75,10 @@
           <div>
             <h4 class="font-semibold mb-4">Contato</h4>
             <div class="flex flex-col gap-2">
-              <a href="mailto:contato@audentestech.com.br" class="text-light/80 hover:text-primary">
-                contato@audentestech.com.br
+              <a href="mailto:adm.audentestech@gmail.com" class="text-light/80 hover:text-primary">
+                adm.audentestech@gmail.com
               </a>
-              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="text-light/80 hover:text-primary">
+              <a href="https://wa.me/5541999964650" target="_blank" rel="noopener noreferrer" class="text-light/80 hover:text-primary">
                 WhatsApp
               </a>
             </div>
@@ -92,7 +92,7 @@
     </footer>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/5511999999999" 
+    <a href="https://wa.me/5541999964650" 
        target="_blank" 
        rel="noopener noreferrer"
        class="fixed bottom-6 right-6 bg-primary hover:bg-primary/90 text-dark p-4 rounded-full shadow-lg transition-transform hover:scale-105 z-50">
