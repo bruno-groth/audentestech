@@ -75,18 +75,27 @@
           <div>
             <h4 class="font-semibold mb-4">Contato</h4>
             <div class="flex flex-col gap-2">
-              <a href="mailto:adm.audentestech@gmail.com" class="text-light/80 hover:text-primary">
-                adm.audentestech@gmail.com
+              <a href="mailto:adm.audentestech@gmail.com" class="text-light/80 hover:text-primary inline-flex items-center gap-2">
+                <Icon name="heroicons:envelope" class="text-xl" />
+                <span>adm.audentestech@gmail.com</span>
               </a>
-              <a href="https://wa.me/5541999964650" target="_blank" rel="noopener noreferrer" class="text-light/80 hover:text-primary">
-                WhatsApp
+              <a href="https://wa.me/5541999964650" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="text-light/80 hover:text-primary inline-flex items-center gap-2">
+                <Icon name="mdi:whatsapp" class="text-xl" />
+                <span>(41) 99996-4650</span>
               </a>
             </div>
           </div>
         </div>
         
-        <div class="mt-12 pt-8 border-t border-primary/10 text-center text-light/60">
-          <p>&copy; {{ new Date().getFullYear() }} Audentes Tech. Todos os direitos reservados.</p>
+        <div class="mt-12 pt-8 border-t border-primary/10 text-center">
+          <div class="mb-4">
+            <p class="text-primary font-medium mb-1">Audentes Tech Solutions LTDA</p>
+            <p class="text-light/60 text-sm">CNPJ: 59.223.855/0001-24</p>
+          </div>
+          <p class="text-light/60">&copy; {{ new Date().getFullYear() }} Audentes Tech. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
