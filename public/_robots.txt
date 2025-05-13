@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Allow: /blog/
+Allow: /servicos/
+Allow: /sobre/
+Allow: /portfolio/
+Allow: /contato/
+
+# Prevent crawling of potential development/admin areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_nuxt/
+Disallow: /_ipx/
+
+# Sitemap location
+Sitemap: https://audentestech.com.br/sitemap.xml
+
