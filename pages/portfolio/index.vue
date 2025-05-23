@@ -79,30 +79,32 @@
             :key="project.id"
             class="card group hover:scale-[1.02] transition-all duration-300"
           >
-            <div class="relative aspect-video mb-6 overflow-hidden rounded-lg">
-              <img 
-                :src="project.image" 
-                :alt="project.title"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                <div class="flex gap-2">
-                  <span v-for="tag in project.tags" :key="tag" class="text-xs bg-primary/20 text-primary px-2 py-1 rounded">
-                    {{ tag }}
-                  </span>
-                </div>
-              </div>
-            </div>
-            <h3 class="text-xl font-bold mb-2">{{ project.title }}</h3>
-            <p class="text-light/80 mb-4">{{ project.description }}</p>
             <a 
               :href="project.url" 
               target="_blank" 
               rel="noopener noreferrer"
-              class="text-primary hover:text-primary/80 inline-flex items-center gap-2"
+              class="block"
             >
-              Ver projeto
-              <Icon name="heroicons:arrow-top-right-on-square" />
+              <div class="relative aspect-video mb-6 overflow-hidden rounded-lg">
+                <img 
+                  :src="project.image" 
+                  :alt="project.title"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                  <div class="flex gap-2">
+                    <span v-for="tag in project.tags" :key="tag" class="text-xs bg-primary/20 text-primary px-2 py-1 rounded">
+                      {{ tag }}
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <h3 class="text-xl font-bold mb-2">{{ project.title }}</h3>
+              <p class="text-light/80 mb-4">{{ project.description }}</p>
+              <span class="text-primary hover:text-primary/80 inline-flex items-center gap-2">
+                Ver projeto
+                <Icon name="heroicons:arrow-top-right-on-square" />
+              </span>
             </a>
           </div>
         </div>
@@ -162,31 +164,49 @@ const filters = [
 const projects = [
   {
     id: 1,
-    title: 'E-commerce Modern Style',
-    description: 'Loja virtual completa com integração de pagamentos e gestão de estoque.',
-    image: '/portfolio/ecommerce-1.jpg',
-    tags: ['E-commerce', 'Vue.js', 'Node.js'],
-    type: 'ecommerce',
-    url: '#'
+    title: 'RBL Toque Mágico Pinturas',
+    description: 'Site institucional para empresa especializada em pintura residencial e comercial. Design moderno e responsivo com galeria de serviços.',
+    image: '/portfolio/rblpinturas.png',
+    tags: ['Site Institucional', 'Vue.js', 'Nuxt 3'],
+    type: 'site',
+    url: 'https://www.rblpinturas.com.br/'
   },
   {
     id: 2,
-    title: 'App de Gestão Empresarial',
-    description: 'Sistema web para gestão de processos e equipes.',
-    image: '/portfolio/app-1.jpg',
-    tags: ['Web App', 'Dashboard', 'Vue.js'],
-    type: 'app',
-    url: '#'
+    title: 'Juca Materiais de Construção',
+    description: 'Website completo para loja de materiais de construção, com catálogo de produtos e sistema de orçamentos online.',
+    image: 'https://images.unsplash.com/photo-1581783898377-1c85bf937427?q=80&w=2940',
+    tags: ['Site Institucional', 'Catálogo', 'SEO'],
+    type: 'site',
+    url: 'https://jucamateriais.vercel.app/'
   },
   {
     id: 3,
-    title: 'Site Corporativo Empresa X',
-    description: 'Website institucional com blog e área de carreiras.',
-    image: '/portfolio/site-1.jpg',
-    tags: ['Site Institucional', 'Blog', 'SEO'],
-    type: 'site',
-    url: '#'
+    title: 'Carteira Z',
+    description: 'Landing page moderna para aplicativo de controle financeiro, com foco em conversão e apresentação de funcionalidades.',
+    image: 'https://images.unsplash.com/photo-1579621970590-9d624316904b?q=80&w=2940',
+    tags: ['Landing Page', 'UI/UX', 'Performance'],
+    type: 'landing',
+    url: 'https://carteiraz.vercel.app/'
   },
+  {
+    id: 4,
+    title: 'Piso Center',
+    description: 'Site institucional para loja especializada em pisos e revestimentos, com mostruário digital de produtos.',
+    image: 'https://images.unsplash.com/photo-1615971677499-5467cbab01c0?q=80&w=2940',
+    tags: ['Site Institucional', 'Galeria', 'SEO'],
+    type: 'site',
+    url: 'http://www.pisocenter.com'
+  },
+  {
+    id: 5,
+    title: 'Choic3',
+    description: 'E-commerce cristão completo com estampas modernas e exclusivas. Loja de roupas, com sistema de pagamento integrado e checkout de alta conversão.',
+    image: '/portfolio/choic3.jpg',
+    tags: ['E-commerce', 'Vue.js', 'Nuxt 3'],
+    type: 'ecommerce',
+    url: 'https://choic3.vercel.app/'
+  }
 ]
 
 const currentFilter = ref('all')

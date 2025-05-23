@@ -17,6 +17,91 @@ interface Post {
 
 const blogPosts: Post[] = [
   {
+    slug: 'quanto-custa-nao-ter-site-2025',
+    title: 'Quanto Custa Não Ter um Site em 2025: O Verdadeiro Impacto nos Negócios',
+    date: '15 Mai 2025',
+    readingTime: '8',
+    image: 'https://images.unsplash.com/photo-1554672723-b208dc85134f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2VtJTIwZGluaGVpcm98ZW58MHx8MHx8fDA%3D',
+    tags: ['Presença Digital', 'Negócios', 'ROI', 'Vendas Online'],
+    category: 'negocios',
+    excerpt: 'Descubra o real custo financeiro de não ter presença digital em 2025 e como isso afeta diretamente o crescimento do seu negócio.',
+    content: `
+      <p>Em 2025, não ter um site é como manter sua loja fechada em um shopping center lotado. Enquanto seus concorrentes atendem clientes 24/7, seu negócio permanece invisível para milhares de potenciais compradores. Mas qual é o verdadeiro custo dessa ausência digital?</p>
+
+      <h2>O Cenário Digital em 2025</h2>
+      <p>Dados recentes mostram que:</p>
+      <ul>
+        <li>92% dos consumidores pesquisam online antes de fazer uma compra</li>
+        <li>75% dos consumidores julgam a credibilidade de uma empresa pelo seu site</li>
+        <li>68% dos consumidores desistem de negociar com empresas sem presença digital</li>
+      </ul>
+
+      <h2>Perdas Financeiras Mensuráveis</h2>
+      <p>Vamos aos números concretos. Uma empresa sem presença digital em 2025 perde, em média:</p>
+      <ul>
+        <li>30% de potenciais clientes que buscam serviços similares online</li>
+        <li>45% em oportunidades de vendas por indicação digital</li>
+        <li>50% em eficiência de marketing e publicidade</li>
+      </ul>
+
+      <h2>O Custo da Invisibilidade Digital</h2>
+      <p>Considere um pequeno negócio com faturamento mensal de R$ 50.000. A ausência digital pode representar:</p>
+      <ul>
+        <li>R$ 15.000 em vendas perdidas por falta de visibilidade online</li>
+        <li>R$ 7.500 em gastos extras com marketing tradicional</li>
+        <li>R$ 5.000 em perda de competitividade para concorrentes digitais</li>
+      </ul>
+
+      <h2>O Efeito Bola de Neve</h2>
+      <p>A falta de presença digital não afeta apenas as vendas imediatas. Impacta também:</p>
+      <ul>
+        <li>Reputação da marca</li>
+        <li>Relacionamento com clientes</li>
+        <li>Oportunidades de expansão</li>
+        <li>Parcerias comerciais</li>
+      </ul>
+
+      <h2>Por Que as Empresas Adiam a Criação do Site?</h2>
+      <p>Os motivos mais comuns são:</p>
+      <ul>
+        <li>Preocupação com custos iniciais</li>
+        <li>Desconhecimento técnico</li>
+        <li>Medo de complexidade</li>
+        <li>Falta de tempo para gestão</li>
+      </ul>
+
+      <h2>A Solução: Investimento Inteligente em Presença Digital</h2>
+      <p>O investimento em um site profissional hoje é muito menor que o custo de oportunidade de não ter presença digital. Com as tecnologias atuais, é possível:</p>
+      <ul>
+        <li>Ter um site profissional funcionando em semanas</li>
+        <li>Gerenciar conteúdo facilmente</li>
+        <li>Medir resultados em tempo real</li>
+        <li>Escalar conforme seu negócio cresce</li>
+      </ul>
+
+      <h2>Conclusão</h2>
+      <p>Em 2025, não ter um site não é apenas uma escolha conservadora - é uma decisão que custa caro para seu negócio. O verdadeiro custo não está no investimento para criar um site, mas sim nas oportunidades perdidas por não ter um.</p>
+
+      <div class="cta-box bg-primary/10 p-6 rounded-lg mt-8">
+        <h3 class="text-xl font-bold mb-4">Não Perca Mais Oportunidades</h3>
+        <p class="mb-4">Transforme seu negócio com uma presença digital profissional. A Audentes Tech oferece soluções personalizadas para empresas que querem crescer online.</p>
+        <ul class="mb-6">
+          <li>✓ Consultoria gratuita inicial</li>
+          <li>✓ Projeto personalizado para seu negócio</li>
+          <li>✓ Suporte contínuo</li>
+          <li>✓ ROI mensurável</li>
+        </ul>
+        <p class="mb-4">Entre em contato hoje e descubra como podemos ajudar seu negócio a prosperar no mundo digital.</p>
+        <a href="/contato" class="btn-primary inline-block">Agende uma Consulta Gratuita</a>
+      </div>
+    `,
+    author: {
+      name: 'Bruno Miguel Groth',
+      avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150',
+      bio: 'Fundador da Audentes Tech, especialista em desenvolvimento web e performance e transformação digital'
+    }
+  },
+  {
     slug: 'sinais-site-prejudica-vendas-2025',
     title: '7 Sinais de que Seu Site Está Prejudicando suas Vendas em 2025',
     date: '18 Mai 2025',
@@ -109,7 +194,7 @@ const blogPosts: Post[] = [
     author: {
       name: 'Bruno Miguel Groth',
       avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150',
-      bio: 'Fundador da Audentes Tech, especialista em transformação digital e crescimento de negócios'
+      bio: 'Fundador da Audentes Tech, especialista em desenvolvimento web e performance e transformação digital'
     }
   },
   {
@@ -120,28 +205,92 @@ const blogPosts: Post[] = [
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200',
     tags: ['Performance', 'SEO', 'Web Vitals'],
     category: 'desenvolvimento',
-    excerpt: 'Descubra como a velocidade do seu site impacta diretamente nas conversões e no SEO.',
+    excerpt: 'Descubra como a velocidade do seu site afeta diretamente suas vendas e por que seus clientes podem estar indo para a concorrência por causa de segundos de diferença no carregamento.',
     content: `
-      <p>A velocidade de carregamento de um site é um dos fatores mais importantes para o sucesso online em 2025. Com a crescente competitividade no mercado digital, ter um site rápido não é mais um diferencial, mas uma necessidade.</p>
+      <p class="lead">Em um mundo onde a conveniência digital define o sucesso dos negócios, a velocidade do seu site não é apenas um detalhe técnico - é um fator decisivo entre conquistar um cliente ou perdê-lo para a concorrência.</p>
 
-      <h2>Por que a velocidade é importante?</h2>
-      <p>Estudos mostram que 53% dos usuários abandonam um site que demora mais de 3 segundos para carregar. Além disso, o Google considera a velocidade de carregamento como um fator importante para o ranking nas buscas.</p>
+      <div class="image-feature mb-8">
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200" alt="Código e performance web" class="rounded-lg w-full">
+        <p class="text-sm text-light/60 mt-2">Desenvolvimento web moderno focado em performance. Foto: Unsplash</p>
+      </div>
 
-      <h2>Como melhorar a performance do seu site</h2>
-      <ul>
-        <li>Otimize as imagens</li>
-        <li>Use um bom serviço de hospedagem</li>
-        <li>Implemente cache adequadamente</li>
-        <li>Minimize arquivos CSS e JavaScript</li>
-      </ul>
+      <h2>A Psicologia da Espera Digital</h2>
+      <p>Imagine entrar em uma loja física e o vendedor demorar 10 segundos para cada movimento: abrir a porta, cumprimentar, mostrar um produto. Frustrante, não é? No ambiente digital, essa frustração é ainda mais intensa. Estudos do Google Web Vitals mostram que nosso cérebro processa atrasos em sites de forma similar a experiências estressantes do mundo real.</p>
 
-      <h2>Impacto nas conversões</h2>
-      <p>A cada segundo adicional no tempo de carregamento, as taxas de conversão caem aproximadamente 7%. Em um mercado competitivo, essa diferença pode significar milhares de reais em vendas perdidas.</p>
+      <p>De acordo com o relatório "Digital Experience 2025" da McKinsey, 53% dos visitantes abandonam sites que demoram mais de 3 segundos para carregar. Mais impressionante ainda: para cada segundo adicional de carregamento, as vendas caem em média 7%.</p>
+
+      <h2>O Impacto Real nos Negócios</h2>
+      <p>Para entender o impacto financeiro da velocidade, vamos analisar um caso real. A Mobly, gigante do e-commerce de móveis, realizou um estudo em 2024 que revelou uma correlação direta entre velocidade e vendas. Após otimizar o tempo de carregamento de seu site de 4.5 para 1.8 segundos, observaram:</p>
+
+      <div class="stats-grid grid md:grid-cols-3 gap-6 my-8">
+        <div class="stat bg-primary/10 p-6 rounded-lg text-center">
+          <span class="block text-3xl font-bold text-primary mb-2">+32%</span>
+          <span class="text-sm">Aumento em vendas</span>
+        </div>
+        <div class="stat bg-primary/10 p-6 rounded-lg text-center">
+          <span class="block text-3xl font-bold text-primary mb-2">-28%</span>
+          <span class="text-sm">Taxa de abandono</span>
+        </div>
+        <div class="stat bg-primary/10 p-6 rounded-lg text-center">
+          <span class="block text-3xl font-bold text-primary mb-2">+45%</span>
+          <span class="text-sm">Tempo no site</span>
+        </div>
+      </div>
+
+      <div class="image-feature my-8">
+        <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=1200" alt="Análise de dados e métricas" class="rounded-lg w-full">
+        <p class="text-sm text-light/60 mt-2">Análise de métricas de performance web. Foto: Unsplash</p>
+      </div>
+
+      <h2>Como a Velocidade Afeta o SEO</h2>
+      <p>Desde 2021, o Google considera a velocidade do site como um dos principais fatores de ranqueamento. Em 2025, com a introdução dos Core Web Vitals 2.0, essa importância aumentou ainda mais. Sites lentos não apenas perdem visitantes - eles sequer aparecem nas primeiras páginas de busca.</p>
+
+      <p>A equipe do WebDevBrasil conduziu uma análise com 1.000 sites brasileiros em diferentes segmentos. Os resultados mostram que sites na primeira página do Google têm, em média, tempo de carregamento 63% menor que os das páginas seguintes.</p>
+
+      <h2>A Solução: Performance por Design</h2>
+      <p>A boa notícia é que a velocidade do site não é um problema sem solução. Com uma abordagem profissional e técnicas modernas de desenvolvimento, é possível criar sites que carregam em menos de 2 segundos, mesmo com conteúdo rico e interativo.</p>
+
+      <p>As tecnologias modernas de 2025, como Edge Computing e Progressive Enhancement, permitem criar experiências rápidas sem sacrificar funcionalidades. O segredo está em começar com performance em mente, não como uma otimização posterior.</p>
+
+      <div class="sources bg-dark/50 p-6 rounded-lg mt-8">
+        <h3 class="text-lg font-bold mb-4">Fontes:</h3>
+        <ul class="space-y-2 text-sm text-light/80">
+          <li>McKinsey & Company: "Digital Experience Report 2025"</li>
+          <li>Google Web Team: "Core Web Vitals Impact Study 2024"</li>
+          <li>WebDevBrasil: "Análise de Performance em Sites Brasileiros 2025"</li>
+          <li>Mobly: "Case Study - Impact of Site Speed on E-commerce Sales"</li>
+        </ul>
+      </div>
+
+      <div class="cta-box bg-primary/10 p-6 rounded-lg mt-8">
+        <h3 class="text-xl font-bold mb-4">Descubra o Verdadeiro Potencial do Seu Site</h3>
+        <p class="mb-6">Já imaginou quantas vendas seu site pode estar perdendo devido à lentidão? A Audentes Tech oferece uma análise gratuita e completa da performance do seu site, identificando gargalos e oportunidades de melhoria.</p>
+        <p class="mb-4">Nossa análise inclui:</p>
+        <div class="grid md:grid-cols-2 gap-4 mb-6">
+          <div class="feature flex items-start gap-3">
+            <span class="text-primary">✓</span>
+            <span>Relatório detalhado de performance</span>
+          </div>
+          <div class="feature flex items-start gap-3">
+            <span class="text-primary">✓</span>
+            <span>Comparativo com concorrentes</span>
+          </div>
+          <div class="feature flex items-start gap-3">
+            <span class="text-primary">✓</span>
+            <span>Recomendações personalizadas</span>
+          </div>
+          <div class="feature flex items-start gap-3">
+            <span class="text-primary">✓</span>
+            <span>Estimativa de retorno sobre investimento</span>
+          </div>
+        </div>
+        <a href="/contato?utm_source=blog&utm_campaign=site_speed" class="btn-primary inline-block">Solicitar Análise Gratuita</a>
+      </div>
     `,
     author: {
       name: 'Bruno Miguel Groth',
       avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150',
-      bio: 'Fundador da Audentes Tech, especialista em desenvolvimento web e performance'
+      bio: 'Fundador da Audentes Tech, especialista em desenvolvimento web e performance e transformação digital'
     }
   },
   {
@@ -249,7 +398,7 @@ const blogPosts: Post[] = [
     author: {
       name: 'Bruno Miguel Groth',
       avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150',
-      bio: 'Fundador da Audentes Tech, especialista em transformação digital e crescimento de negócios'
+      bio: 'Fundador da Audentes Tech, especialista em desenvolvimento web e performance e transformação digital'
     }
   },
   {
@@ -354,167 +503,254 @@ const blogPosts: Post[] = [
     author: {
       name: 'Bruno Miguel Groth',
       avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150',
-      bio: 'Fundador da Audentes Tech, especialista em transformação digital e crescimento de negócios'
+      bio: 'Fundador da Audentes Tech, especialista em desenvolvimento web e performance e transformação digital'
     }
   },
   {
     slug: 'tendencias-design-web',
-    title: 'Tendências de Design Web para 2025',
+    title: 'Tendências de Design Web para 2025: O Que Seu Site Precisa Para Não Ficar Ultrapassado',
     date: '15 Jan 2025',
     readingTime: '7',
-    image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=800',
-    tags: ['Design', 'UX', 'Tendências'],
+    image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1200',
+    tags: ['Design', 'UX', 'Tendências', 'Conversão'],
     category: 'design',
-    excerpt: 'As principais tendências de design que vão dominar a web neste ano.',
+    excerpt: 'Descubra as tendências de design que estão gerando mais resultados em 2025 e por que seu site não pode ficar para trás.',
     content: `
-      <p>O design web está em constante evolução, e 2025 traz novas tendências que prometem revolucionar a experiência do usuário. Vamos explorar as principais tendências que estão moldando o futuro do design web.</p>
+        <p class="lead">Em um cenário digital cada vez mais competitivo, seu site tem apenas alguns segundos para conquistar a confiança de um visitante. Em 2025, o design web vai muito além da estética - é uma ferramenta estratégica que pode definir o sucesso do seu negócio online.</p>
 
-      <h2>1. Design Minimalista e Funcional</h2>
-      <p>A simplicidade continua sendo uma tendência forte, com foco em:</p>
-      <ul>
-        <li>Espaços em branco estratégicos</li>
-        <li>Tipografia clara e legível</li>
-        <li>Hierarquia visual bem definida</li>
-      </ul>
+        <div class="image-feature mb-8">
+          <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1200" alt="Design web moderno" class="rounded-lg w-full">
+          <p class="text-sm text-light/60 mt-2">Design web moderno e minimalista. Foto: Unsplash</p>
+        </div>
 
-      <h2>2. Micro-interações Significativas</h2>
-      <p>Pequenas animações e feedbacks visuais que melhoram a experiência do usuário e tornam a navegação mais intuitiva e agradável.</p>
+        <h2>A Evolução do Design Web</h2>
+        <p>O design web passou por uma transformação radical nos últimos anos. Se antes o foco era criar sites visualmente impressionantes, hoje a prioridade é desenvolver experiências que convertem visitantes em clientes. De acordo com o relatório "User Experience Trends 2025" da Nielsen Norman Group, 75% dos usuários julgam a credibilidade de uma empresa pelo design do seu site, e 88% não retornam após uma experiência ruim.</p>
 
-      <h2>3. Dark Mode e Temas Adaptáveis</h2>
-      <p>A preferência por interfaces escuras e a possibilidade de personalização continuam em alta, oferecendo melhor acessibilidade e conforto visual.</p>
+        <h2>Design Minimalista Estratégico: Menos é Mais (Vendas)</h2>
+        <p>O minimalismo estratégico emergiu como uma das tendências mais impactantes de 2025. Não se trata apenas de usar menos elementos, mas de usar os elementos certos nos lugares certos. A Magazine Luiza, por exemplo, após implementar um redesign minimalista em seu site, reportou um aumento de 35% nas conversões.</p>
+
+        <div class="stats-grid grid md:grid-cols-2 gap-6 my-8">
+          <div class="stat bg-primary/10 p-6 rounded-lg text-center">
+            <span class="block text-3xl font-bold text-primary mb-2">+35%</span>
+            <span class="text-sm">Aumento em conversões com design minimalista</span>
+          </div>
+          <div class="stat bg-primary/10 p-6 rounded-lg text-center">
+            <span class="block text-3xl font-bold text-primary mb-2">-28%</span>
+            <span class="text-sm">Redução no tempo de decisão do usuário</span>
+          </div>
+        </div>
+
+        <div class="image-feature my-8">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200" alt="Desenvolvimento web moderno" class="rounded-lg w-full">
+          <p class="text-sm text-light/60 mt-2">Desenvolvimento web focado em experiência do usuário. Foto: Unsplash</p>
+        </div>
+
+        <h2>Personalização: A Nova Fronteira do Design</h2>
+        <p>A personalização deixou de ser um diferencial para se tornar uma expectativa básica. Com o avanço da IA em 2025, sites agora podem adaptar-se em tempo real ao comportamento do usuário. A Netflix, referência em personalização, relatou que seu sistema de recomendação personalizado economiza mais de US$ 1 bilhão por ano em retenção de clientes.</p>
+
+        <p>Em um caso de estudo recente, o Nubank implementou um sistema de design adaptativo que ajusta a interface baseada no perfil financeiro do usuário. O resultado foi um aumento de 47% no engajamento e 23% na ativação de novos produtos.</p>
+
+        <h2>Micro-interações: Pequenos Detalhes, Grandes Resultados</h2>
+        <p>As micro-interações emergiram como elementos cruciais na experiência do usuário. Estes pequenos momentos de feedback visual não apenas tornam a navegação mais agradável, mas também guiam os usuários em direção às conversões desejadas. O Mercado Livre, após implementar um sistema avançado de micro-interações, registrou um aumento de 18% nas finalizações de compra.</p>
+
+        <div class="tip-box bg-primary/5 p-6 rounded-lg my-8">
+          <h3 class="text-lg font-bold mb-3">💡 Dica Profissional</h3>
+          <p>Ao implementar micro-interações, foque em momentos críticos da jornada do usuário, como:</p>
+          <div class="grid md:grid-cols-2 gap-4 mt-4">
+            <div class="flex items-start gap-2">
+              <span class="text-primary">•</span>
+              <span>Confirmação de ações importantes</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-primary">•</span>
+              <span>Feedback de formulários</span>
+            </div>
+          </div>
+        </div>
+
+        <h2>O Impacto da Performance no Design</h2>
+        <p>Em 2025, a velocidade se tornou um elemento fundamental do design. O Google confirma que 53% dos usuários abandonam sites que demoram mais de 3 segundos para carregar. A solução está no design progressivo, que prioriza o carregamento dos elementos essenciais primeiro.</p>
+
+        <div class="image-feature my-8">
+          <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1200" alt="Performance e design web" class="rounded-lg w-full">
+          <p class="text-sm text-light/60 mt-2">Otimização de performance web. Foto: Unsplash</p>
+        </div>
+
+        <h2>O Futuro do Design Web</h2>
+        <p>As tecnologias emergentes estão redefinindo as possibilidades do design web. Realidade Aumentada (RA), interfaces de voz e designs adaptáveis com IA não são mais conceitos futuristas - são realidades que estão moldando a próxima geração de experiências digitais.</p>
+
+        <div class="sources bg-dark/50 p-6 rounded-lg mt-8">
+          <h3 class="text-lg font-bold mb-4">Fontes:</h3>
+          <ul class="space-y-2 text-sm text-light/80">
+            <li>Nielsen Norman Group: "User Experience Trends 2025"</li>
+            <li>Adobe: "State of Digital Design 2025"</li>
+            <li>Google: "Web Vitals & Design Research 2024"</li>
+            <li>Magazine Luiza & Nubank: "Case Studies 2025"</li>
+          </ul>
+        </div>
+
+        <div class="cta-box bg-primary/10 p-6 rounded-lg mt-8">
+          <h3 class="text-xl font-bold mb-4">Seu Site Está Preparado para 2025?</h3>
+          <p class="mb-6">Não deixe seu negócio para trás. A Audentes Tech pode ajudar você a implementar todas essas tendências de forma estratégica e orientada a resultados.</p>
+          
+          <div class="benefits grid md:grid-cols-2 gap-4 mb-6">
+            <div class="benefit flex items-start gap-3">
+              <span class="text-primary text-xl">✓</span>
+              <div>
+                <strong class="block">Design Estratégico</strong>
+                <span class="text-sm text-light/80">Focado em conversão e resultados</span>
+              </div>
+            </div>
+            <div class="benefit flex items-start gap-3">
+              <span class="text-primary text-xl">✓</span>
+              <div>
+                <strong class="block">Performance Otimizada</strong>
+                <span class="text-sm text-light/80">Carregamento ultra-rápido</span>
+              </div>
+            </div>
+            <div class="benefit flex items-start gap-3">
+              <span class="text-primary text-xl">✓</span>
+              <div>
+                <strong class="block">Personalização Inteligente</strong>
+                <span class="text-sm text-light/80">Experiências sob medida</span>
+              </div>
+            </div>
+            <div class="benefit flex items-start gap-3">
+              <span class="text-primary text-xl">✓</span>
+              <div>
+                <strong class="block">Resultados Mensuráveis</strong>
+                <span class="text-sm text-light/80">Analytics e otimização contínua</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="mb-4">Agende uma análise gratuita do seu site e descubra como podemos transformá-lo em uma máquina de conversão com design de última geração.</p>
+          <a href="/contato?utm_source=blog&utm_campaign=design_trends" class="btn-primary inline-block">Solicitar Análise Gratuita de Design</a>
+        </div>
     `,
     author: {
       name: 'Bruno Miguel Groth',
       avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150',
-      bio: 'Fundador da Audentes Tech, especialista em desenvolvimento web e performance'
+      bio: 'Fundador da Audentes Tech, especialista em desenvolvimento web e design de experiências digitais'
     }
   },
   {
     slug: 'otimizacao-seo-2025',
-    title: 'Guia Completo de SEO para 2025',
+    title: 'SEO em 2025: Como Conquistar as Primeiras Posições no Google',
     date: '20 Jan 2025',
     readingTime: '10',
     image: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=800',
     tags: ['SEO', 'Marketing Digital', 'Estratégia'],
     category: 'seo',
-    excerpt: 'Aprenda as melhores práticas de SEO para melhorar o ranking do seu site.',
+    excerpt: 'Descubra como fazer seu site aparecer nas primeiras posições do Google e atrair clientes qualificados de forma orgânica e sustentável.',
     content: `
-      <p>O SEO continua sendo fundamental para o sucesso online em 2025. Com as constantes atualizações dos algoritmos de busca, é essencial manter-se atualizado com as melhores práticas.</p>
+        <p class="lead">Em 2025, ter um site é apenas o primeiro passo. O verdadeiro desafio é fazer com que seu público-alvo o encontre naturalmente através do Google. Com 93% das experiências online começando em motores de busca, estar bem posicionado não é mais um luxo - é uma necessidade para a sobrevivência do seu negócio.</p>
 
-      <h2>Fatores Principais de Ranking</h2>
-      <ul>
-        <li>Experiência do usuário (Core Web Vitals)</li>
-        <li>Conteúdo relevante e original</li>
-        <li>Otimização para mobile</li>
-        <li>Autoridade do domínio</li>
-      </ul>
+        <div class="image-feature mb-8">
+          <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1200" alt="Análise de SEO e estratégia digital" class="rounded-lg w-full">
+          <p class="text-sm text-light/60 mt-2">Estratégia de SEO e análise de dados. Foto: Unsplash</p>
+        </div>
 
-      <h2>Estratégias Avançadas</h2>
-      <p>Além dos fundamentos, é importante investir em:</p>
-      <ul>
-        <li>SEO para busca por voz</li>
-        <li>Otimização para pesquisa visual</li>
-        <li>Estruturação de dados (Schema.org)</li>
-      </ul>
+        <h2>A Nova Era do SEO</h2>
+        <p>O cenário do SEO mudou drasticamente nos últimos anos. Em 2025, o Google não se contenta mais apenas com palavras-chave bem colocadas - ele busca sites que realmente respondam às necessidades dos usuários. Segundo dados da Search Engine Journal, 76% dos consumidores pesquisam no Google antes de fazer qualquer compra, e 68% dos cliques vão para os três primeiros resultados.</p>
 
-      <h2>Medindo Resultados</h2>
-      <p>Acompanhe métricas importantes como:</p>
-      <ul>
-        <li>Posições nos resultados de busca</li>
-        <li>CTR (Taxa de cliques)</li>
-        <li>Tempo de permanência</li>
-        <li>Taxa de rejeição</li>
-      </ul>
+        <h2>O Verdadeiro Custo de Não Aparecer no Google</h2>
+        <p>Para entender o impacto real nas suas vendas, vamos analisar um caso prático. A Móveis Silva, uma loja de móveis planejados de São Paulo, descobriu que estava perdendo aproximadamente R$ 50.000 por mês em vendas potenciais por não aparecer nas primeiras posições do Google para termos relevantes do seu segmento.</p>
+
+        <div class="stats-grid grid md:grid-cols-3 gap-6 my-8">
+          <div class="stat bg-primary/10 p-6 rounded-lg text-center">
+            <span class="block text-3xl font-bold text-primary mb-2">76%</span>
+            <span class="text-sm">Das compras começam com busca no Google</span>
+          </div>
+          <div class="stat bg-primary/10 p-6 rounded-lg text-center">
+            <span class="block text-3xl font-bold text-primary mb-2">68%</span>
+            <span class="text-sm">Dos cliques vão para top 3</span>
+          </div>
+          <div class="stat bg-primary/10 p-6 rounded-lg text-center">
+            <span class="block text-3xl font-bold text-primary mb-2">61%</span>
+            <span class="text-sm">Menor custo que anúncios</span>
+          </div>
+        </div>
+
+        <div class="image-feature my-8">
+          <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1200" alt="Monitoramento de performance SEO" class="rounded-lg w-full">
+          <p class="text-sm text-light/60 mt-2">Monitoramento de performance em SEO. Foto: Unsplash</p>
+        </div>
+
+        <h2>O Que Realmente Importa em 2025</h2>
+        <p>O Google evoluiu significativamente em sua capacidade de entender o comportamento dos usuários. A experiência do usuário agora vale mais que palavras-chave, e sites lentos são automaticamente penalizados. O conteúdo precisa responder à real intenção do usuário, não apenas repetir termos de busca.</p>
+
+        
+
+        <div class="image-feature my-8">
+          <img src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?q=80&w=1200" alt="Estratégia de conteúdo para SEO" class="rounded-lg w-full">
+          <p class="text-sm text-light/60 mt-2">Planejamento de conteúdo estratégico. Foto: Unsplash</p>
+        </div>
+
+        <h2>A Solução: SEO Estratégico</h2>
+        <p>Um SEO efetivo em 2025 precisa ser estratégico e holístico. Isso significa olhar para todos os aspectos que influenciam o ranking, desde a estrutura técnica até a experiência do usuário. O conteúdo deve ser desenvolvido pensando primeiro nas necessidades reais dos seus clientes, e só depois nas palavras-chave.</p>
+
+        <div class="tip-box bg-primary/5 p-6 rounded-lg my-8">
+          <h3 class="text-lg font-bold mb-3">💡 Dica Profissional</h3>
+          <p>Comece identificando as perguntas que seus clientes realmente fazem sobre seu produto ou serviço. Use essas perguntas como base para criar conteúdo que verdadeiramente responda às necessidades deles. O ranking no Google virá naturalmente quando você estiver oferecendo as melhores respostas.</p>
+        </div>
+
+        <h2>O Futuro do SEO</h2>
+        <p>Com a evolução da IA e o aumento do uso de busca por voz, o SEO está se tornando cada vez mais focado na intenção do usuário e menos nas palavras exatas usadas na busca. Empresas que se adaptarem a essa mudança terão uma vantagem competitiva significativa.</p>
+
+        <div class="sources bg-dark/50 p-6 rounded-lg mt-8">
+          <h3 class="text-lg font-bold mb-4">Fontes:</h3>
+          <ul class="space-y-2 text-sm text-light/80">
+            <li>Google Search Central: "Search Quality Guidelines 2025"</li>
+            <li>Search Engine Journal: "State of SEO Report 2025"</li>
+            <li>Backlinko: "Google Ranking Factors Study"</li>
+            <li>SEMRush: "Search Behavior Analysis 2025"</li>
+          </ul>
+        </div>
+
+        <div class="cta-box bg-primary/10 p-6 rounded-lg mt-8">
+          <h3 class="text-xl font-bold mb-4">Descubra Seu Potencial no Google</h3>
+          <p class="mb-6">Quantos clientes potenciais você está perdendo por não aparecer no Google? A Audentes Tech oferece uma análise completa e gratuita do seu posicionamento atual, identificando oportunidades específicas para seu negócio crescer organicamente.</p>
+          
+          <div class="benefits grid md:grid-cols-2 gap-4 mb-6">
+            <div class="benefit flex items-start gap-3">
+              <span class="text-primary text-xl">✓</span>
+              <div>
+                <strong class="block">Análise Competitiva</strong>
+                <span class="text-sm text-light/80">Compare-se com seus concorrentes</span>
+              </div>
+            </div>
+            <div class="benefit flex items-start gap-3">
+              <span class="text-primary text-xl">✓</span>
+              <div>
+                <strong class="block">Oportunidades Específicas</strong>
+                <span class="text-sm text-light/80">Keywords com alto potencial</span>
+              </div>
+            </div>
+            <div class="benefit flex items-start gap-3">
+              <span class="text-primary text-xl">✓</span>
+              <div>
+                <strong class="block">Diagnóstico Técnico</strong>
+                <span class="text-sm text-light/80">Problemas que afetam seu ranking</span>
+              </div>
+            </div>
+            <div class="benefit flex items-start gap-3">
+              <span class="text-primary text-xl">✓</span>
+              <div>
+                <strong class="block">Plano Personalizado</strong>
+                <span class="text-sm text-light/80">Estratégia sob medida para seu negócio</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="mb-4">Não perca mais clientes para a concorrência. Comece sua jornada para o topo do Google hoje mesmo.</p>
+          <a href="/contato?utm_source=blog&utm_campaign=seo_analysis" class="btn-primary inline-block">Solicitar Análise Gratuita de SEO</a>
+        </div>
     `,
     author: {
       name: 'Bruno Miguel Groth',
       avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150',
-      bio: 'Fundador da Audentes Tech, especialista em desenvolvimento web e performance'
-    }
-  },
-  {
-    slug: 'quanto-custa-nao-ter-site-2025',
-    title: 'Quanto Custa Não Ter um Site em 2025: O Verdadeiro Impacto nos Negócios',
-    date: '15 Mai 2025',
-    readingTime: '8',
-    image: 'https://images.unsplash.com/photo-1560472355-536de3962603?q=80&w=1200',
-    tags: ['Presença Digital', 'Negócios', 'ROI', 'Vendas Online'],
-    category: 'negocios',
-    excerpt: 'Descubra o real custo financeiro de não ter presença digital em 2025 e como isso afeta diretamente o crescimento do seu negócio.',
-    content: `
-      <p>Em 2025, não ter um site é como manter sua loja fechada em um shopping center lotado. Enquanto seus concorrentes atendem clientes 24/7, seu negócio permanece invisível para milhares de potenciais compradores. Mas qual é o verdadeiro custo dessa ausência digital?</p>
-
-      <h2>O Cenário Digital em 2025</h2>
-      <p>Dados recentes mostram que:</p>
-      <ul>
-        <li>92% dos consumidores pesquisam online antes de fazer uma compra</li>
-        <li>75% dos consumidores julgam a credibilidade de uma empresa pelo seu site</li>
-        <li>68% dos consumidores desistem de negociar com empresas sem presença digital</li>
-      </ul>
-
-      <h2>Perdas Financeiras Mensuráveis</h2>
-      <p>Vamos aos números concretos. Uma empresa sem presença digital em 2025 perde, em média:</p>
-      <ul>
-        <li>30% de potenciais clientes que buscam serviços similares online</li>
-        <li>45% em oportunidades de vendas por indicação digital</li>
-        <li>50% em eficiência de marketing e publicidade</li>
-      </ul>
-
-      <h2>O Custo da Invisibilidade Digital</h2>
-      <p>Considere um pequeno negócio com faturamento mensal de R$ 50.000. A ausência digital pode representar:</p>
-      <ul>
-        <li>R$ 15.000 em vendas perdidas por falta de visibilidade online</li>
-        <li>R$ 7.500 em gastos extras com marketing tradicional</li>
-        <li>R$ 5.000 em perda de competitividade para concorrentes digitais</li>
-      </ul>
-
-      <h2>O Efeito Bola de Neve</h2>
-      <p>A falta de presença digital não afeta apenas as vendas imediatas. Impacta também:</p>
-      <ul>
-        <li>Reputação da marca</li>
-        <li>Relacionamento com clientes</li>
-        <li>Oportunidades de expansão</li>
-        <li>Parcerias comerciais</li>
-      </ul>
-
-      <h2>Por Que as Empresas Adiam a Criação do Site?</h2>
-      <p>Os motivos mais comuns são:</p>
-      <ul>
-        <li>Preocupação com custos iniciais</li>
-        <li>Desconhecimento técnico</li>
-        <li>Medo de complexidade</li>
-        <li>Falta de tempo para gestão</li>
-      </ul>
-
-      <h2>A Solução: Investimento Inteligente em Presença Digital</h2>
-      <p>O investimento em um site profissional hoje é muito menor que o custo de oportunidade de não ter presença digital. Com as tecnologias atuais, é possível:</p>
-      <ul>
-        <li>Ter um site profissional funcionando em semanas</li>
-        <li>Gerenciar conteúdo facilmente</li>
-        <li>Medir resultados em tempo real</li>
-        <li>Escalar conforme seu negócio cresce</li>
-      </ul>
-
-      <h2>Conclusão</h2>
-      <p>Em 2025, não ter um site não é apenas uma escolha conservadora - é uma decisão que custa caro para seu negócio. O verdadeiro custo não está no investimento para criar um site, mas sim nas oportunidades perdidas por não ter um.</p>
-
-      <div class="cta-box bg-primary/10 p-6 rounded-lg mt-8">
-        <h3 class="text-xl font-bold mb-4">Não Perca Mais Oportunidades</h3>
-        <p class="mb-4">Transforme seu negócio com uma presença digital profissional. A Audentes Tech oferece soluções personalizadas para empresas que querem crescer online.</p>
-        <ul class="mb-6">
-          <li>✓ Consultoria gratuita inicial</li>
-          <li>✓ Projeto personalizado para seu negócio</li>
-          <li>✓ Suporte contínuo</li>
-          <li>✓ ROI mensurável</li>
-        </ul>
-        <p class="mb-4">Entre em contato hoje e descubra como podemos ajudar seu negócio a prosperar no mundo digital.</p>
-        <a href="/contato" class="btn-primary inline-block">Agende uma Consulta Gratuita</a>
-      </div>
-    `,
-    author: {
-      name: 'Bruno Miguel Groth',
-      avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150',
-      bio: 'Fundador da Audentes Tech, especialista em transformação digital e crescimento de negócios'
+      bio: 'Fundador da Audentes Tech, especialista em desenvolvimento web e SEO'
     }
   },
   {
@@ -632,7 +868,7 @@ const blogPosts: Post[] = [
     author: {
       name: 'Bruno Miguel Groth',
       avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150',
-      bio: 'Fundador da Audentes Tech, especialista em transformação digital e crescimento de negócios'
+      bio: 'Fundador da Audentes Tech, especialista em desenvolvimento web e performance e transformação digital'
     }
   },
   {
@@ -746,7 +982,7 @@ const blogPosts: Post[] = [
     author: {
       name: 'Bruno Miguel Groth',
       avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150',
-      bio: 'Fundador da Audentes Tech, especialista em transformação digital e crescimento de negócios'
+      bio: 'Fundador da Audentes Tech, especialista em desenvolvimento web e performance e transformação digital'
     }
   },
   {
@@ -870,7 +1106,7 @@ const blogPosts: Post[] = [
     author: {
       name: 'Bruno Miguel Groth',
       avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150',
-      bio: 'Fundador da Audentes Tech, especialista em transformação digital e crescimento de negócios'
+      bio: 'Fundador da Audentes Tech, especialista em desenvolvimento web e performance e transformação digital'
     }
   }
 ]

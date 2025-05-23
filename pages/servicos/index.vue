@@ -254,6 +254,58 @@ useHead({
       name: 'description',
       content: 'Desenvolvimento de sites, landing pages, aplicações web e e-commerce. Soluções personalizadas e otimizadas para o seu negócio.'
     }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Serviços de Desenvolvimento Web - Audentes Tech",
+        "description": "Desenvolvimento de sites, landing pages, aplicações web e e-commerce. Soluções personalizadas e otimizadas para o seu negócio.",
+        "provider": {
+          "@type": "Organization",
+          "name": "Audentes Tech"
+        },
+        "offers": {
+          "@type": "AggregateOffer",
+          "offers": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Sites Institucionais",
+                "description": "Sites profissionais e modernos para estabelecer sua presença online. Design responsivo, otimizado para SEO e fácil de atualizar."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Landing Pages",
+                "description": "Páginas otimizadas para conversão, ideais para campanhas e lançamentos. Foco em resultados e geração de leads."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Web Apps",
+                "description": "Aplicações web sob medida para automatizar processos e melhorar a eficiência do seu negócio."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "E-commerce",
+                "description": "Lojas virtuais completas e personalizadas para vender seus produtos online. Integração com meios de pagamento e gestão de estoque."
+              }
+            }
+          ]
+        }
+      })
+    }
   ]
 })
 </script>

@@ -118,4 +118,28 @@ const isMobileMenuOpen = ref(false)
 watch(() => useRoute().path, () => {
   isMobileMenuOpen.value = false
 })
+
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Audentes Tech",
+        "url": "https://audentestech.com.br",
+        "description": "Criação de sites profissionais, landing pages e aplicações web. Especialistas em desenvolvimento web com foco em performance e resultados.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "adm.audentestech@gmail.com",
+          "contactType": "customer service"
+        },
+        "sameAs": [
+          "https://linkedin.com/company/audentestech",
+          "https://instagram.com/audentestech"
+        ]
+      })
+    }
+  ]
+})
 </script>
