@@ -169,7 +169,6 @@ const categories = [
   { slug: 'all', name: 'Todos' },
   { slug: 'negocios', name: 'Negócios' },
   { slug: 'design', name: 'Design' },
-  { slug: 'desenvolvimento', name: 'Desenvolvimento' },
   { slug: 'seo', name: 'SEO' }
 ]
 
