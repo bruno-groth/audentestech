@@ -53,6 +53,7 @@
       <div class="container relative z-10">
         <div class="max-w-3xl">
           <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            <span class="block text-lg sm:text-xl md:text-2xl font-normal text-primary mb-2">Audentes Tech</span>
             Transforme sua presença digital com um site
             <span class="text-primary">rápido</span> e
             <span class="text-primary">impactante</span>

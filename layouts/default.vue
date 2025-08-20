@@ -93,7 +93,7 @@
         <div class="mt-12 pt-8 border-t border-primary/10 text-center">
           <div class="mb-4">
             <p class="text-primary font-medium mb-1">Audentes Tech Solutions LTDA</p>
-            <p class="text-light/60 text-sm">CNPJ: 59.223.855/0001-24</p>
+            <p class="text-light/60 text-sm">CNPJ: 59.223.855/0001-24 | www.audentestech.com.br</p>
           </div>
           <p class="text-light/60">&copy; {{ new Date().getFullYear() }} Audentes Tech. Todos os direitos reservados.</p>
         </div>
@@ -113,6 +113,7 @@
 
 <script setup>
 const isMobileMenuOpen = ref(false)
+const siteUrl = useSiteUrl()
 
 // Close mobile menu when route changes
 watch(() => useRoute().path, () => {
@@ -127,17 +128,31 @@ useHead({
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Audentes Tech",
-        "url": "https://audentestech.com.br",
+        "url": siteUrl,
+        "logo": `${siteUrl}/favicon.ico`,
         "description": "Criação de sites profissionais, landing pages e aplicações web. Especialistas em desenvolvimento web com foco em performance e resultados.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Curitiba",
+          "addressRegion": "PR",
+          "addressCountry": "BR"
+        },
         "contactPoint": {
           "@type": "ContactPoint",
           "email": "adm.audentestech@gmail.com",
-          "contactType": "customer service"
+          "contactType": "customer service",
+          "areaServed": "BR",
+          "availableLanguage": "Portuguese"
         },
         "sameAs": [
           "https://linkedin.com/company/audentestech",
           "https://instagram.com/audentestech"
-        ]
+        ],
+        "offers": {
+          "@type": "Service",
+          "name": "Criação de Sites Profissionais",
+          "description": "Desenvolvimento de sites institucionais, e-commerce e sistemas web personalizados"
+        }
       })
     }
   ]

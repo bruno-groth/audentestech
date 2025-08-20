@@ -4,9 +4,16 @@ export default defineNuxtConfig({
   routeRules: {
     '/**': { static: true } // Todas as rotas serão pré-renderizadas
   },
+  
+  // Runtime config para variáveis de ambiente
+  runtimeConfig: {
+    public: {
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://www.audentestech.com.br'
+    }
+  },
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@vueuse/nuxt', '@nuxt/icon'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@vueuse/nuxt', '@nuxt/icon', '@nuxtjs/sitemap', '@nuxtjs/robots'],
 
   postcss: {
     plugins: {
@@ -27,10 +34,12 @@ export default defineNuxtConfig({
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'format-detection', content: 'telephone=no' },
+        { name: 'robots', content: 'index,follow' },
         { name: 'description', content: 'Criação de sites profissionais, landing pages e aplicações web. Especialistas em desenvolvimento web com foco em performance e resultados.' },
         { property: 'og:title', content: 'Audentes Tech - Desenvolvimento Web Profissional' },
         { property: 'og:description', content: 'Criação de sites profissionais, landing pages e aplicações web. Especialistas em desenvolvimento web com foco em performance e resultados.' },
         { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: process.env.NUXT_PUBLIC_SITE_URL || 'https://www.audentestech.com.br' },
         { property: 'og:site_name', content: 'Audentes Tech' },
         { name: 'theme-color', content: '#21c063' }
       ],
@@ -53,7 +62,7 @@ export default defineNuxtConfig({
       '2xl': 1536
     },
     provider: 'ipx',
-    domains: ['audentestech.com.br'],
+    domains: [process.env.NUXT_PUBLIC_SITE_URL?.replace('https://', '').replace('http://', '') || 'www.audentestech.com.br'],
     presets: {
       avatar: {
         modifiers: {
@@ -88,32 +97,14 @@ export default defineNuxtConfig({
         '/portfolio',
         '/blog',
         '/contato',
+        '/criar-site-curitiba',
+        '/empresa-software',
         '/blog/importancia-site-rapido',
         '/blog/tendencias-design-web',
         '/blog/otimizacao-seo-2024'
       ]
     },
     static: true
-  },
-  site: {
-    url: 'https://audentestech.com.br'
-  },
-  robots: {
-    UserAgent: '*',
-    Allow: '/',
-    Sitemap: '/sitemap.xml'
-  },
-  sitemap: {
-    hostname: 'https://audentestech.com.br',
-    gzip: true,
-    exclude: [
-      '/admin/**'
-    ],
-    defaults: {
-      changefreq: 'weekly',
-      priority: 0.8,
-      lastmod: new Date().toISOString()
-    }
   },
   experimental: {
     payloadExtraction: true,
